@@ -1,0 +1,17 @@
+<html>
+<body>
+	<h1>Your KENEXA job application has been successfully submitted!</h1>
+	<h2 id="app-id"></h2>
+	<img id="web-pixel" src="" alt="">
+
+	<script type="text/javascript">
+		var webPixelImg = document.getElementById("web-pixel");
+		var candidateId = Math.floor(Math.random() * 999999999);
+		webPixelImg.src = "https://staging.talentpx.com/kenexa/webbug?CANDIDATE_ID=" + candidateId;
+		webPixelImg.alt = "Points to " + webPixelImg.src;
+
+		var appIdH2 = document.getElementById("app-id");
+		appIdH2.innerHTML = "KENEXA CANDIDATE_ID = " + candidateId;
+	</script>
+</body>
+</html>
